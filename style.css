@@ -285,3 +285,74 @@ nav ul li a:hover::after, nav ul li a.active::after { width: 100%; }
         height: 35px;
     }
 }
+
+
+
+/* =========================================
+   DISEÑO RESPONSIVO (MÓVILES)
+   ========================================= */
+@media screen and (max-width: 768px) {
+    
+    /* --- Navegación --- */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        gap: 15px;
+    }
+    
+    .navbar nav ul {
+        display: flex;
+        flex-direction: column; /* Apila los enlaces del menú verticalmente */
+        padding: 0;
+        gap: 10px;
+    }
+
+    /* --- Sección Hero --- */
+    .hero {
+        display: flex;
+        flex-direction: column; /* Pone el texto debajo de la imagen */
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .hero-right {
+        margin-top: 1.5rem;
+    }
+
+    /* --- Cuadrícula de Servicios --- */
+    .servicios-grid-inicio {
+        display: grid;
+        grid-template-columns: 1fr; /* Cambia de varias columnas a solo 1 columna */
+        gap: 20px;
+        padding: 1rem;
+    }
+
+    /* --- Análisis Competitivo (Tarjetas) --- */
+    .cards-container {
+        display: flex;
+        flex-direction: column; /* Apila las 3 tarjetas verticalmente */
+        gap: 20px;
+        padding: 1rem;
+    }
+
+    /* --- Banners --- */
+    .blue-banner {
+        display: flex;
+        flex-direction: column; /* Apila los íconos de beneficios verticalmente */
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 2rem 1rem;
+    }
+
+    .red-banner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 2rem 1rem;
+    }
+}
